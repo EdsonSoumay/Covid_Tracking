@@ -1,25 +1,75 @@
-import logo from './logo.svg';
+
+import React, { Component, useEffect, useState } from 'react';
+import Card from './components/card';
+import axios from "axios"
 import './App.css';
 
-function App() {
+const App = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    axios 
+     .get("https://covid19.mathdro.id/api/confirmed")
+     .then((response) => console.log(response));
+  }, [])
+
+  /*
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p> App component</p>
+    </>
   );
-}
+
+  */
+  return (
+    <>
+      {users.map((item) =>{
+        return (
+          <Card
+            name={item.name}
+ 
+          />
+        )
+      })}
+    </>
+  );
+  
+};
+export default App; 
+
+/*
+import React, {Component, useEffect, useState} from "react";
+import Card from './components/card';
+//import './App.css';
+import axios from "axios";
+
+
+
+
+const App =()=> {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+  axios
+  .get("https://jsonplaceholder.typicode.com/users");
+  .then((response) => setUsers(response.data));
+  }, [])
+
+return( 
+  <>
+    {users.map((item) =>{
+      return(
+        <Card
+          name={item.name}
+          username={item.username}
+          website = {item.website}
+          phone = {item.phone}
+        />
+      );
+    })}
+    </> 
+  );
+};
 
 export default App;
+*/
