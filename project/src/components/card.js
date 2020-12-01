@@ -3,7 +3,7 @@ import react from 'react';
 const Card = (props) =>{
     return(
         <div className="card-container">
-            <p>{props.name}</p>
+            <p>{props.confirmed}</p>
 
         </div>
     );
