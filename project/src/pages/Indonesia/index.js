@@ -11,6 +11,7 @@ const Indonesia = () => {
      .get("https://indonesia-covid-19.mathdro.id/api")
      .then((response) =>
 
+     
      { 
     setJumlahKasus(response.data.jumlahKasus);
      setMeninggal(response.data.meninggal);
