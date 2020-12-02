@@ -1,8 +1,7 @@
-
 import React from 'react'
 
-const Global = () =>{
-    return(
+const Global = () => {
+    return (
         <div>
             <h1>Global</h1>
         </div>
@@ -10,3 +9,7 @@ const Global = () =>{
 }
 
 export default Global;
+
+
+
+

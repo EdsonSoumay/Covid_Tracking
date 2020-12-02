@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { Global, Indonesia, Provinsi } from './pages'
 
 
+
 const App = () =>{
     return (
         <Router>
@@ -45,6 +46,5 @@ const App = () =>{
 }
 
 export default App;
-
 
 
