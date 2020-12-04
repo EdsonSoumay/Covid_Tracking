@@ -13,7 +13,7 @@ const App = () =>{
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/global">
+                            <Link to="/Global">
                                 Global
                             </Link>
                         </li>

@@ -1,57 +1,52 @@
 
-.dataNumber1{
-  font-size: 1.5rem  ;
-  width: 150px;
-  height: 150px;
+.positif{
   text-align: center;
-  margin: 2px;
-  padding: 12px;
-  border-radius: 10px;
   border-width: px;
   border-color: black;
+  background-color:rgb(228, 179, 72);
+  height: 140px;
+  border-radius: 10px;
   border-style: solid;
-  font-weight: bold;
-  background-color:orange;
+  margin: 10px;
+  width: 140px;
+  font-size: 1.3rem  ;
+  padding: 10px;
 }
 
-.dataNumber2{
-  font-size: 1.5rem  ;
-  width: 150px;
-  height: 150px;
+.meninggal{
   text-align: center;
-  margin: 2px;
-  padding: 12px;
-  border-radius: 10px;
   border-width: px;
   border-color: black;
-  border-style: solid;
-  font-weight: bold;
-  background-color:rgba(218, 7, 7, 0.856);
-}
-
-
-.dataNumber3{
-  font-size: 1.5rem  ;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 2px;
-  padding: 12px;
+  background-color:rgb(248, 63, 7);
+  height: 140px;
   border-radius: 10px;
+  border-style: solid;
+  margin: 10px;
+  width: 140px;
+  font-size: 1.3rem  ;
+  padding: 10px;
+}
+.sembuh{
+  text-align: center;
   border-width: px;
   border-color: black;
+  background-color:rgb(46, 241, 20);
+  height: 140px;
+  border-radius: 10px;
   border-style: solid;
-  font-weight: bold;
-  background-color:greenyellow;
-
+  margin: 10px;
+  width: 140px;
+  font-size: 1.3rem  ;
+  padding: 10px;
 }
-.kotak{
+
+.cont{
   display: flex;
   align-items: left;
   justify-content: left;
 
 }
-.kotak2{
+.cont2{
   float: left;
   display: flex;
  

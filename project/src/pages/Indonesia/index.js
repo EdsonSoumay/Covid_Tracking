@@ -21,11 +21,13 @@ const Indonesia = () => {
 
 
   return(
-  <div className = "kotak2">
-    <h1 className ="dataNumber1">Positif {jumlahKasus}</h1>
-    <h1 className ="dataNumber2">meninggal {meninggal}</h1>
-    <h1 className ="dataNumber3">Sembuh {sembuh}</h1>
-  
+  <div>
+    <h4>Jumlah kasus di Indonesia </h4>
+    <div className = "cont2">
+    <h1 className ="positif"> <p>Positif</p> {jumlahKasus}</h1>
+    <h1 className ="meninggal"><p>Meninggal</p> {meninggal}</h1>
+    <h1 className ="sembuh "> <p>Sembuh</p> {sembuh}</h1>
+    </div>  
   </div>
   
 );
