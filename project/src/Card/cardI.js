@@ -21,6 +21,7 @@ const CardI = () => {
  }, []);
 
  return (
+
   <div>
     <h1>Kasus Covid-19 di Indonesia</h1>
     <div className= "cont">

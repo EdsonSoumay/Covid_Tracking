@@ -50,5 +50,10 @@
   float: left;
   display: flex;
  
-}
+} 
 
+.nama{
+  background-color: aquamarine;
+  text-align: left;
+  justify-content: left;
+}

@@ -19,13 +19,15 @@ const CardG = () => {
  }, []);
 
  return (
-  <div>
-    <h1>Kasus Covid-19 keseluruhan Global</h1>
-    <div className= "cont">
-      <h1 className="positif">
-        <p>Positif</p>
-        <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/>
+   
+    <div >
+     <h1>Kasus Covid-19 keseluruhan Global</h1>
+     <div className= "cont">
+      <h1 className = "positif"> 
+      <p>Positif</p>
+      <NumberFormat value={confirmed} thousandSeparator={true} displayType={'text'}/> 
       </h1>
+      
       <h1 className="meninggal">
         <p>Meninggal</p>
         <NumberFormat value={deaths} thousandSeparator={true} displayType={'text'}/>
@@ -35,9 +37,9 @@ const CardG = () => {
         <NumberFormat value={recovered} thousandSeparator={true} displayType={'text'}/>
       </h1>  
     </div>
-  </div>
+    </div>
 
-)
+  )
  
 };
 export default CardG;

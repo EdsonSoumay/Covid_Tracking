@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import CardG from  '../../Card/cardP'
+
+
 
 const Provinsi = () => {
-    return (
-        <div>
-            <h1>Per Provinsi</h1>
-        </div>
-    )
-}
-
+ 
+return(
+  <div>
+    <CardG/>
+  </div>
+)
+  
+};
 export default Provinsi;
 

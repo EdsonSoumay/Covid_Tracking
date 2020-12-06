@@ -8,6 +8,7 @@ import { Global, Indonesia, Provinsi } from './pages'
 
 const App = () =>{
     return (
+        <header className="warna2">
         <Router>
             <div>
                 <nav>
@@ -42,6 +43,7 @@ const App = () =>{
                 </Route>
             </Switch>
         </Router>
+        </header>
     )
 }
 
