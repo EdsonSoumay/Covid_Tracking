@@ -1,59 +1,91 @@
 
-.positif{
+.sembuh,.meninggal,.positif{
   text-align: center;
   border-width: px;
   border-color: black;
-  background-color:rgb(228, 179, 72);
+  background-color:rgb(243, 69, 16);
   height: 140px;
   border-radius: 10px;
   border-style: solid;
   margin: 10px;
   width: 140px;
-  font-size: 1.3rem  ;
+  font-size: 20px  ;
   padding: 10px;
+  box-shadow: 0 0 20px lightblue;
+}
+.positif{
+  background-color:rgb(231, 175, 55);
 }
 
-.meninggal{
-  text-align: center;
-  border-width: px;
-  border-color: black;
-  background-color:rgb(248, 63, 7);
-  height: 140px;
-  border-radius: 10px;
-  border-style: solid;
-  margin: 10px;
-  width: 140px;
-  font-size: 1.3rem  ;
-  padding: 10px;
-}
 .sembuh{
-  text-align: center;
-  border-width: px;
-  border-color: black;
-  background-color:rgb(46, 241, 20);
-  height: 140px;
-  border-radius: 10px;
-  border-style: solid;
-  margin: 10px;
-  width: 140px;
-  font-size: 1.3rem  ;
-  padding: 10px;
+ background-color:rgb(37, 241, 10);
 }
+
 
 .cont{
   display: flex;
-  align-items: left;
-  justify-content: left;
-
+  justify-content: middle;
+  justify-content: space-around;
+  align-items: flex-end;  
 }
-.cont2{
-  float: left;
-  display: flex;
- 
-} 
 
-.nama{
-  background-color: aquamarine;
+.bgcolor{
+  padding: 10px;
+  background-color: rgb(233, 248, 243);
+  min-height:100vh;
+}
+
+.warnaTabel{
+  background-color: rgb(148, 245, 213);
   text-align: left;
   justify-content: left;
 }
+
+.warnaJTabel{
+  background-color: rgb(31, 252, 178);
+  text-align: left;
+  justify-content: left;
+}
+
+ul{
+  display:flex;
+  justify-content: space-between;
+  width: 250px;
+ margin-left: -25px;
+}
+
+.home{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li{
+  margin: 0px;
+  display: inline;
+  padding:  2px;
+
+}
+
+nav ul li :hover{
+  color:white;
+}
+
+nav ul li:focus:hover{
+  color:white;
+}
+
+nav a{
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+nav a:focus{
+  color:white;
+  background-color: blue;
+}
+

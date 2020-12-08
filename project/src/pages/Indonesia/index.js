@@ -1,16 +1,17 @@
 import React from 'react';
-import CardI from  '../../Card/cardI'
+import CardI from  '../../MainCard/cardI'
+import KetI from '../../CardKeterangan/ketI'
 
 
-
-const Global = () => {
+const Indonesia = () => {
  
 return(
   <div>
+    <KetI/> 
     <CardI/>
   </div>
 )
   
 };
-export default Global;
+export default Indonesia;
 
