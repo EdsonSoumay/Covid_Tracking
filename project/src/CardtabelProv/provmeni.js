@@ -5,7 +5,13 @@ import NumberFormat from "react-number-format";
 const Provmeni = (props) =>{
     return (
         <div >
-            <th className='warnaTabel'><NumberFormat value = {props.meninggal}thousandSeparator={true} displayType ={'text'}/></th>      
+               <table>
+                    <thead> 
+                          <tr> 
+                                <th className='warnaTabel'><NumberFormat value = {props.meninggal}thousandSeparator={true} displayType ={'text'}/></th> 
+                          </tr>
+                    </thead>
+             </table>
         </div>
     )
 }

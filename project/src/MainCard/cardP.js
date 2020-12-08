@@ -6,7 +6,7 @@ import Provposi from '../CardtabelProv/provposi'
 import Provsemb from '../CardtabelProv/provsemb'
 import Provmeni from '../CardtabelProv/provmeni';
 import Provnama from '../CardtabelProv/provnama';
-
+import shortid from 'shortid';
 const CardP = () => {
   const [dataprov, getDataProv] = useState([]);
   const [menunggu, setMenunggu] = useState(true);
@@ -22,29 +22,31 @@ const CardP = () => {
 }, []);
 
     return(
-    <>
+   
     <div className = "cont">
     { menunggu?(
-    <>
-   <Loader type="ThreeDots" color="#00BFFF" height={80} width={80} />
-     </>
+   
+   <Loader type="ThreeDots" color="#00BFFF" height={150} width={150} />
+     
        ) :(
         <div className = 'cont'>
-          <table border="3">
-            <tr>
-              <th className = "warnaJTabel">No</th>
-              <th className = "warnaJTabel">Provinsi</th>
-              <th className = "warnaJTabel">Positif</th>
-              <th className = "warnaJTabel">Sembuh</th>
-              <th className = "warnaJTabel">Meninggal</th>
-            </tr>
+          <table style = {{border:"3px solid black"}}>
+            <thead key = {shortid.generate()}>
+              <tr>
+                <th className = "warnaJTabel">No</th>
+                <th className = "warnaJTabel">Provinsi</th>
+                <th className = "warnaJTabel">Positif</th>
+                <th className = "warnaJTabel">Sembuh</th>
+                <th className = "warnaJTabel">Meninggal</th>
+              </tr>
+            </thead>
             {
               dataprov.map((item, index)=> 
                 {
                   return(
-                    <>
+                    <tbody key = {shortid.generate()}>
                       <tr>
-                          <th className = "warnaTabel" scope = "row" key = {item.fid}>{index + 1} </th>
+                          <th className = "warnaTabel" scope = "row" >{index + 1} </th>
                           
                           <th className = "warnaTabel">
                           <Provnama
@@ -70,7 +72,7 @@ const CardP = () => {
                           />
                           </th>
                       </tr>                 
-                  </>
+                  </tbody>
                   )
               }
               )      
@@ -80,7 +82,7 @@ const CardP = () => {
       )
     }
     </div>
-  </>
+  
  );
 }
 export default CardP;

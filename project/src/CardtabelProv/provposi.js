@@ -4,9 +4,16 @@ import NumberFormat from "react-number-format";
 
 const Provposi = (props) =>{
     return (
-        <div>
-            <th className='warnaTabel'><NumberFormat value = {props.positif}thousandSeparator={true} displayType ={'text'}/></th>      
-        </div>
+
+       <div >
+        <table>
+            <thead>
+                 <tr> 
+                     <th className='warnaTabel'><NumberFormat value = {props.positif}thousandSeparator={true} displayType ={'text'}/></th> 
+                 </tr>
+            </thead>
+        </table>
+       </div>
     )
 }
 
